@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button id="eightButton" layoutX="140.0" layoutY="80.0" mnemonicParsing="false" onAction="#Eight" onTouchPressed="#Eight" prefHeight="30.0" prefWidth="54.0" text="8" />
+        <Button id="nineButton" layoutX="208.0" layoutY="80.0" mnemonicParsing="false" onAction="#Nine" onTouchPressed="#Nine" prefHeight="30.0" prefWidth="54.0" text="9" />
+        <Button id="fourButton" layoutX="74.0" layoutY="122.0" mnemonicParsing="false" onAction="#Four" onTouchPressed="#Four" prefHeight="30.0" prefWidth="54.0" text="4" />
+        <Button id="fiveButton" layoutX="140.0" layoutY="122.0" mnemonicParsing="false" onAction="#Five" onTouchPressed="#Five" prefHeight="30.0" prefWidth="54.0" text="5" />
+        <Button id="sixButton" layoutX="208.0" layoutY="122.0" mnemonicParsing="false" onAction="#Six" onTouchPressed="#Six" prefHeight="30.0" prefWidth="54.0" text="6" />
+        <Button id="oneButton" layoutX="74.0" layoutY="166.0" mnemonicParsing="false" onAction="#One" onTouchPressed="#One" prefHeight="30.0" prefWidth="54.0" text="1" />
+        <Button id="twoButton" layoutX="140.0" layoutY="166.0" mnemonicParsing="false" onAction="#Two" onTouchPressed="#Two" prefHeight="30.0" prefWidth="54.0" text="2" />
+        <Button id="threeButton" layoutX="208.0" layoutY="166.0" mnemonicParsing="false" onAction="#Three" onTouchPressed="#Three" prefHeight="30.0" prefWidth="54.0" text="3" />
+        <Button id="sevenButton" layoutX="74.0" layoutY="80.0" mnemonicParsing="false" onAction="#Seven" onTouchPressed="#Seven" prefHeight="30.0" prefWidth="54.0" text="7" />
+        <Button id="dotButton" layoutX="139.0" layoutY="211.0" mnemonicParsing="false" onAction="#Dot" onTouchPressed="#Dot" prefHeight="30.0" prefWidth="54.0" text="." />
+        <Button id="zeroButton" layoutX="74.0" layoutY="211.0" mnemonicParsing="false" onAction="#Zero" onTouchPressed="#Zero" prefHeight="30.0" prefWidth="54.0" text="0" />
+        <Button id="enterButton" layoutX="197.0" layoutY="255.0" mnemonicParsing="false" onAction="#Enter" onTouchPressed="#Enter" prefHeight="46.0" prefWidth="81.0" text="Enter" />
+        <Button id="cashSev" layoutX="73.0" layoutY="257.0" mnemonicParsing="false" onAction="#ActionFour" onTouchPressed="#ActionFour" text="\$7.99" />
+        <Button id="cashEig" layoutX="141.0" layoutY="257.0" mnemonicParsing="false" onAction="#ActionOne" onTouchPressed="#ActionOne" text="\$8.99" />
+        <Button id="cashNin" layoutX="73.0" layoutY="295.0" mnemonicParsing="false" onAction="#ActionTwo" onTouchPressed="#ActionTwo" text="\$9.99" />
+        <Button id="cashTen" layoutX="139.0" layoutY="295.0" mnemonicParsing="false" onAction="#ActionThree" onTouchPressed="#ActionThree" text="\$10.99" />
+        <Button id="addButton" layoutX="208.0" layoutY="211.0" mnemonicParsing="false" onAction="#Add" onTouchPressed="#Add" prefHeight="30.0" prefWidth="54.0" text="Add" />
+        <Line endX="100.0" layoutX="164.0" layoutY="247.0" startX="-100.0" />
+        <TextField id="textOut" fx:id="textOut" layoutX="278.0" layoutY="30.0" prefHeight="40.0" prefWidth="201.0" />
+        <Button id="clearButton" layoutX="289.0" layoutY="80.0" mnemonicParsing="false" onAction="#Clear" onTouchPressed="#Clear" text="Clear" />
+        <TextField id="totalText" fx:id="totalText" layoutX="68.0" layoutY="30.0" prefHeight="40.0" prefWidth="201.0" />
+        <Label layoutX="289.0" layoutY="260.0" prefHeight="25.0" prefWidth="123.0" text="&lt;-- Use to get Total" />
+        <Label layoutX="289.0" layoutY="214.0" prefHeight="25.0" prefWidth="159.0" text="&lt;-- Use to add Item to pool" />
+        <TextField layoutX="-320.0" layoutY="110.0" prefHeight="40.0" prefWidth="201.0" />
+        <MenuButton contentDisplay="TOP" layoutX="495.0" layoutY="445.0" mnemonicParsing="false" popupSide="TOP" text="TotalSales">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+            </items>
+        </MenuButton>
+    </children>
+</AnchorPane>
